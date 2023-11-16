@@ -378,7 +378,13 @@ export interface ApiSettingSetting extends Schema.SingleType {
     blogDescription: Attribute.String & Attribute.Required;
     logo: Attribute.Media;
     menuLink: Attribute.Component<'menu.menu-link', true>;
-    texto: Attribute.Blocks;
+    texto: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

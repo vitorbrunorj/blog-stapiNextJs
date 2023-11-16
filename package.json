@@ -10,7 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@ckeditor/strapi-plugin-ckeditor": "^0.0.10",
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
     "@strapi/plugin-cloud": "4.15.4",
     "@strapi/plugin-color-picker": "^4.7.1",
     "@strapi/plugin-documentation": "^4.15.4",
@@ -19,7 +19,7 @@
     "@strapi/plugin-users-permissions": "4.15.4",
     "@strapi/provider-upload-cloudinary": "^4.15.4",
     "@strapi/strapi": "^4.7.1",
-    "@webbio/strapi-plugin-scheduler": "^1.0.6",
+    "@webbio/strapi-plugin-scheduler": "^1.0.4",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -37,7 +37,7 @@
     "uuid": "66d024c7-ad12-4e43-afce-428836c90b84"
   },
   "engines": {
-    "node": ">=18.0.0 <=20.x.x",
+    "node": "18.18.2",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
