@@ -11,6 +11,7 @@ import i18N from "@strapi/plugin-i18n/strapi-admin";
 import seo from "@strapi/plugin-seo/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
 import scheduler from "@webbio/strapi-plugin-scheduler/strapi-admin";
+import multiSelect from "strapi-plugin-multi-select/strapi-admin";
 import previewButton from "strapi-plugin-preview-button/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
@@ -25,6 +26,7 @@ renderAdmin(document.getElementById("strapi"), {
     seo: seo,
     "users-permissions": usersPermissions,
     scheduler: scheduler,
+    "multi-select": multiSelect,
     "preview-button": previewButton,
   },
 });
