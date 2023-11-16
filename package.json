@@ -14,6 +14,7 @@
     "@strapi/plugin-cloud": "4.15.4",
     "@strapi/plugin-color-picker": "^4.7.1",
     "@strapi/plugin-documentation": "^4.15.4",
+    "@strapi/plugin-graphql": "^4.15.4",
     "@strapi/plugin-i18n": "^4.7.1",
     "@strapi/plugin-seo": "^1.9.6",
     "@strapi/plugin-users-permissions": "4.15.4",
