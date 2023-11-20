@@ -63,25 +63,6 @@ module.exports = ({ env }) => ({
 });
 
 module.exports = ({ env }) => ({
-  scheduler: {
-    enabled: true,
-    resolve: "./src/plugins/strapi-plugin-scheduler",
-    config: {
-      "api::page.page": {
-        initialPublishAtDate: setMonth(
-          new Date(),
-          new Date().getMonth() + 1,
-        ).toDateString(),
-        initialArchiveAtDate: setMonth(
-          new Date(),
-          new Date().getMonth() + 3,
-        ).toDateString(),
-      },
-    },
-  },
-});
-
-module.exports = ({ env }) => ({
   documentation: {
     enabled: true,
   },
@@ -93,3 +74,18 @@ module.exports = ({ env }) => ({
   },
 });
 
+module.exports = {
+  //
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
+  },
+};

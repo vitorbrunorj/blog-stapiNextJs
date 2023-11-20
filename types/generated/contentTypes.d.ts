@@ -857,7 +857,7 @@ export interface ApiSettingSetting extends Schema.SingleType {
   info: {
     singularName: 'setting';
     pluralName: 'settings';
-    displayName: 'setting';
+    displayName: 'settings';
     description: '';
   };
   options: {
